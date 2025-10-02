@@ -1,6 +1,6 @@
 # mcp-lab
 
-# MCP DevOps Agent: A Comprehensive Teaching Guide
+# MCP DevOps Agent: A Comprehensive Guide
 
 ## Table of Contents
 1. [Executive Summary](#executive-summary)
@@ -240,7 +240,7 @@ async def discover_tools(self):
         }
 ```
 
-**Teaching Point**: Dynamic discovery allows agents to adapt to new capabilities without code changes.
+**Learning Point**: Dynamic discovery allows agents to adapt to new capabilities without code changes.
 
 #### 2. RBAC Implementation
 ```python
@@ -249,7 +249,7 @@ def can_execute(self, user: str, tool: str) -> bool:
     return tool in self.roles.get(role, [])
 ```
 
-**Teaching Point**: Every operation must pass through policy checks.
+**Learning Point**: Every operation must pass through policy checks.
 
 #### 3. Safe Command Execution
 ```python
@@ -263,7 +263,7 @@ async def execute_kubernetes_get(self, args):
     sanitized_data = self.sanitize_k8s_data(raw_data)
 ```
 
-**Teaching Point**: Never trust external command execution - always sanitize and timeout.
+**Learning Point**: Never trust external command execution - always sanitize and timeout.
 
 ---
 
@@ -516,7 +516,7 @@ class AgentOrchestrator:
 
 ---
 
-## Teaching Points
+## Learning Points
 
 ### Lesson 1: Why Agents Need Protocols
 
